@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_notihealth/autentifikasi/signuppage.dart'; // Impor halaman baru
+import 'package:flutter_application_notihealth/forgot%20pw/forgotpasswordpage.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Loginpage extends StatefulWidget {
@@ -22,6 +24,7 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold( 
+      backgroundColor: Colors.white,
       body: Padding(
         padding: const EdgeInsets.all(20.0),
         child: Center(
@@ -63,7 +66,12 @@ class LoginPage extends StatelessWidget {
                 Align(
                   alignment: Alignment.centerRight,
                   child: TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => ForgotPasswordPage()),
+                      );
+                    },
                     child: const Text('Forgot Password?'),
                   ),
                 ),
@@ -136,7 +144,12 @@ class LoginPage extends StatelessWidget {
                 ),
                 SizedBox(height: 20),
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => SignUpPage()),
+                    );
+                  },
                   child: Text("Don't have an account? Sign up"),
                 ),
               ],
