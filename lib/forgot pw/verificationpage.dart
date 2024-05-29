@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_application_notihealth/forgot%20pw/resetpasswordpage.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
@@ -122,8 +123,14 @@ class _VerificationScreenState extends State<VerificationScreen> {
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                // Handle Done button press
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ResetPasswordPage(),
+                  ),
+                );
               },
+                // Handle Done button press
               style: ElevatedButton.styleFrom(
                 foregroundColor: Color(0xFFFF7373),
                 backgroundColor: Color(0xFF801F1F),
