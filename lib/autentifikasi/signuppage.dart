@@ -1,5 +1,5 @@
-// ignore: file_names
 import 'package:flutter/material.dart';
+import 'package:flutter_application_notihealth/autentifikasi/registrationpage.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
@@ -24,7 +24,6 @@ class SignUpPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
@@ -65,17 +64,22 @@ class SignUpPage extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => RegistrationPage()),
+                );
+              },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.white,
-                foregroundColor: Color(0xFF801F1F),
+                foregroundColor: const Color(0xFF801F1F),
                 side: const BorderSide(color: Color(0xFF801F1F)),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30),
                 ),
                 padding: const EdgeInsets.symmetric(horizontal: 170, vertical: 17),
               ),
-              child: const Text('Login'),
+              child: const Text('Sign Up'),
             ),
             const SizedBox(height: 20),
             const Row(
@@ -93,8 +97,8 @@ class SignUpPage extends StatelessWidget {
               onPressed: () {},
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.white,
-                foregroundColor: Color(0xFF801F1F),
-                side: BorderSide(color: Color(0xFF801F1F)),
+                foregroundColor: const Color(0xFF801F1F),
+                side: const BorderSide(color: Color(0xFF801F1F)),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30),
                 ),
@@ -107,8 +111,8 @@ class SignUpPage extends StatelessWidget {
               onPressed: () {},
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.white,
-                foregroundColor: Color(0xFF801F1F),
-                side: BorderSide(color: Color(0xFF801F1F)),
+                foregroundColor: const Color(0xFF801F1F),
+                side: const BorderSide(color: Color(0xFF801F1F)),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30),
                 ),
@@ -130,3 +134,4 @@ class SignUpPage extends StatelessWidget {
     );
   }
 }
+
