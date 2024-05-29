@@ -79,7 +79,7 @@ class SignUpPage extends StatelessWidget {
                 ),
                 padding: const EdgeInsets.symmetric(horizontal: 170, vertical: 17),
               ),
-              child: const Text('Sign Up'),
+              child: const Text('Log In'),
             ),
             const SizedBox(height: 20),
             const Row(
