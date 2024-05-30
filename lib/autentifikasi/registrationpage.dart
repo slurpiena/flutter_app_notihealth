@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_notihealth/Home/homemanpage.dart';
+import 'package:flutter_application_notihealth/Home/homewomanpage.dart';
 
 void main() {
   runApp(MyApp());
@@ -155,7 +157,17 @@ class _RegistrationPageState extends State<RegistrationPage> {
                         padding: EdgeInsets.symmetric(horizontal: 160, vertical: 15),
                       ),
                       onPressed: () {
-                        // Aksi saat tombol ditekan
+                        if (_selectedGender == 'Female') {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => Homewomanpage()),
+                          );
+                        } else if (_selectedGender == 'Male') {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => Homemanpage()),
+                          );
+                        }
                       },
                       child: Text('Done'),
                     ),
@@ -169,3 +181,5 @@ class _RegistrationPageState extends State<RegistrationPage> {
     );
   }
 }
+
+

@@ -67,6 +67,7 @@ flutter:
   - assets/svgs/panah.svg
   - assets/svgs/logo.svg
   - assets/images/logo.png
+  - assets/svgs/woman.svg
 
   # To add assets to your application, add an assets section, like this:
   # assets:
