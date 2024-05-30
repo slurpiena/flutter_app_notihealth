@@ -132,6 +132,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                           decoration: InputDecoration(
                             labelText: 'Height',
                             border: OutlineInputBorder(),
+                            suffixText: 'cm', // Label for height
                           ),
                         ),
                       ),
@@ -141,6 +142,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                           decoration: InputDecoration(
                             labelText: 'Weight',
                             border: OutlineInputBorder(),
+                            suffixText: 'kg', // Label for weight
                           ),
                         ),
                       ),
